@@ -1,71 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta name ="viewport" 
-        content="width=device-width,
-         initial-scale=1">
-        <title>Welcome to Wyz Web</title>
-        <link rel="stylesheet" href="style.css">
-        <link rel="icon" href="logo.png">
-        <style>
-        @font-face { font-family: SAIBA-45; src: url('SAIBA-45-Regular-(v1.1).ttf'); } 
-        </style>
-    </head>
-    <body>
-        <div class="upper">
-            <a href="index.html">BACK</a>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Learn more about Wyzard - A tech enthusiast from Bosnia and Herzegovina">
+    <title>Wyzard | About Me</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="logo.png">
+    <style>
+        @font-face {
+            font-family: SAIBA-45;
+            src: url('SAIBA-45-Regular-(v1.1).ttf');
+        }
+    </style>
+</head>
+
+<body>
+    <div class="upper">
+        <a href="index.html">← Back</a>
         <header class="header"><span class="auto-type"></span></header>
-        <hr class="separator"></hr>
+        <hr class="separator">
+    </div>
+
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed(".auto-type", {
+            strings: ["ABOUT ME"],
+            typeSpeed: 120,
+            loop: false,
+            showCursor: true,
+            cursorChar: '_'
+        });
+    </script>
+
+    <div class="MainContainer">
+        <img class="mandelbrot" src="mandelbrot.png" alt="Profile Image">
+
+        <div class="textboxaboutme">
+            <h2>Greetings!</h2>
+            <p><span class="auto-type-aboutme"></span></p>
+            <script>
+                var typed2 = new Typed(".auto-type-aboutme", {
+                    strings: ["My real name is Dino Osmanovic. Wyzard is just a nickname I gave myself so I don't have to use my real name on the internet.\n\nBy the time of writing this I'm fifteen years old. I was born and live in a small town called Tuzla, Bosnia and Herzegovina.\n\nMy interests are music and tech. I created this site myself to learn a bit of web dev. I am fond of continuing my tech journey and that's why I'll probably post my personal projects here.\n\nI am also a fan of videogames. My favourites are Minecraft, Apex Legends, Portal and Unturned.\n\nHit me up on Discord if you wanna do some gaming or do a project together!\n\n— Sincerely, Dino"],
+                    typeSpeed: 5,
+                    loop: false,
+                    showCursor: true,
+                    cursorChar: '|'
+                });
+            </script>
         </div>
 
-        <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
-        <script>
-            var typed = new Typed(".auto-type", 
-            {
-                strings: ["ABOUT ME"],
-                typeSpeed: 150,
-                loop: false
-            })
-        </script>
-
-        <div class="MainContainer">
-            <img class="mandelbrot" src="mandelbrot.png">
-
-            <div class="textboxaboutme">
-                <h2>Greetings!</h2>
-                <p><span class="auto-type-aboutme"></span></p>
-                <script>
-                    var typed = new Typed(".auto-type-aboutme",
-                        {
-                            strings: ["My real name is Dino Osmanovic. Wyzard is just a nickname I gave myself so I don't have to use my real name on the internet. By the time of writing this I'm fifteen years old(I wonder if I'll update this in the future). I was born and live in a small town called Tuzla, Bosnia and Herzegovina. I'm not using my real picture here because I'm afraid to show my face on the internet for now. My interests are music and tech. I created this site myself to learn a bit of web dev. Nothing crazy, just a basic website. I am fond of continueing my tech journey and that's why I'll probably post my personal projects here if I ever do some. I am also a fan of videogames. My favourites are Minecraft(Modded and vanilla), Apex Legends, Portal and Unturned. Hit me up on Discord if you wanna do some gaming or do a project together. As Glootie from Rick and Morty would say: Do you wanna develop an app? P.S Sorry for the bad design of this website, I am a horrible designer but I hope that I atleast made it look cool. Sincerely, Dino"],
-                            typeSpeed: 2,
-                            loop: false
-                        })
-                </script>
-
-            </div>
-
-            <div class="textboxpcspecs">
-                <h2>PC Specs:</h2>
-                <p>AMD Ryzen 7 7800x3D</p>
-                <p>AsRock B650M HDV/M.2 Motherboard</p>
-                <p>32GB RAM Corsair Vengeance 5600MHz</p>
-                <p>EVGA Nvidia RTX 3060 Ti XC</p>
-                <p>Seasonic G12 750W PSU</p>
-                <p>ASUS AP201 Case</p>
-                <p>Arctic Freezer III 240mm ARGB</p>
-                <p>Razer Mamba Wireless</p>
-                <p>Redragon K552 White RGB Keyboard</p>
-                <p>Monitors:</p>
-                <p>Acer QG241Y 24" 165Hz Gaming Monitor</p>
-                <p>Samsung C24F390</p>
-                <p>Philips 242S1</p>
-
-
-            </div>
-
+        <div class="textboxpcspecs">
+            <h2>PC Specs</h2>
+            <p>AMD Ryzen 7 7800x3D</p>
+            <p>AsRock B650M HDV/M.2 Motherboard</p>
+            <p>32GB RAM Corsair Vengeance 5600MHz</p>
+            <p>EVGA Nvidia RTX 3060 Ti XC</p>
+            <p>Seasonic G12 750W PSU</p>
+            <p>ASUS AP201 Case</p>
+            <p>Arctic Freezer III 240mm ARGB</p>
+            <p>Razer Mamba Wireless</p>
+            <p>Redragon K552 White RGB Keyboard</p>
+            <p>Monitors:</p>
+            <p>Acer QG241Y 24" 165Hz Gaming Monitor</p>
+            <p>Samsung C24F390</p>
+            <p>Philips 242S1</p>
+            <img src="ryzen.png" class="ryzen" alt="AMD Ryzen">
+            <img src="nvda.jpg" class="nvidia" alt="NVIDIA">
         </div>
+    </div>
+</body>
 
-    </body>
 </html>
